@@ -1,0 +1,51 @@
+﻿<Page x:Class="WSR2_3.Views.Pages.DostupPages.RequestList"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WSR2_3.Views.Pages.DostupPages"
+      mc:Ignorable="d" 
+      Loaded="Page_Loaded"
+      d:DesignHeight="450" d:DesignWidth="1000"
+      Title="RequestList">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Выбрать статус:"></TextBlock>
+            <ComboBox Name="cmdStatus" Width="150" SelectionChanged="cmdStatus_SelectionChanged">
+                <ComboBoxItem>проверка</ComboBoxItem>
+                <ComboBoxItem>одобрена</ComboBoxItem>
+                <ComboBoxItem>не одобрена</ComboBoxItem>
+                <ComboBoxItem>Все</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Button Name="btnBack" Click="btnBack_Click" Content="Назад" Width="100" Margin="10"></Button>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <DataGrid Name="RequestDataGrid" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Тип заявки" Binding="{Binding TypeRequest.Title}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Подразделение" Binding="{Binding Subdivision}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Дата" Binding="{Binding Date}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Время" Binding="{Binding Time}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Статус заявки" Binding="{Binding StatusRequest.Title}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Причина" Binding="{Binding Reason}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Фамилия" Binding="{Binding Visitor.FirstName}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Имя" Binding="{Binding Visitor.LastName}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Проверка" Binding="{Binding Permission.Title}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+        <Grid Grid.Row="2">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button Content="Редактировать" Name="BtnEdit" Click="BtnEdit_Click" Width="200" ></Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

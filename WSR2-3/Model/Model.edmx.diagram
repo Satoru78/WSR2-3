@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8e942f9bc85b42df8855ac6e51c687e1" Name="Diagram1">
+        <EntityTypeShape EntityType="WsrTestModel.BlackList" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WsrTestModel.Departament" Width="1.5" PointX="5.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WsrTestModel.Employees" Width="1.5" PointX="8" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="WsrTestModel.Permission" Width="1.5" PointX="3" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WsrTestModel.Request" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WsrTestModel.StatusRequest" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WsrTestModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WsrTestModel.TypeRequest" Width="1.5" PointX="3" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="WsrTestModel.User" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WsrTestModel.UserAsp" Width="1.5" PointX="5.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WsrTestModel.Visitor" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="WsrTestModel.FK_Visitor_BlackList" ManuallyRouted="false" />
+        <AssociationConnector Association="WsrTestModel.FK_Employees_Departament" ManuallyRouted="false" />
+        <AssociationConnector Association="WsrTestModel.FK_Request_Permission" ManuallyRouted="false" />
+        <AssociationConnector Association="WsrTestModel.FK_Request_StatusRequest" ManuallyRouted="false" />
+        <AssociationConnector Association="WsrTestModel.FK_Request_TypeRequest" ManuallyRouted="false" />
+        <AssociationConnector Association="WsrTestModel.FK_Request_Visitor" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
