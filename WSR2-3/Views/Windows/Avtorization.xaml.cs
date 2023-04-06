@@ -54,6 +54,10 @@ namespace WSR2_3.Views.Windows
                                 SecurityManagment security = new SecurityManagment(epmloeeyLog);
                                 security.ShowDialog();
                                 break;
+                            case 3:
+                                SubdivisionControl subdivisionControl = new SubdivisionControl(epmloeeyLog);
+                                subdivisionControl.ShowDialog();
+                                break;
                         }
                     }
                 }

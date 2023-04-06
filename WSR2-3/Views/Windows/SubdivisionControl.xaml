@@ -1,11 +1,11 @@
-﻿<Window x:Class="WSR2_3.Views.Windows.SecurityManagment"
+﻿<Window x:Class="WSR2_3.Views.Windows.SubdivisionControl"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WSR2_3.Views.Windows"
         mc:Ignorable="d"
-        Title="Служба безопасности" Height="450" Width="800">
+        Title="Терминал сотрудника подразделения" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"></RowDefinition>
@@ -14,6 +14,6 @@
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
             <TextBlock Name="tblEmpl" FontSize="20"></TextBlock>
         </StackPanel>
-        <Frame Name="SecurityFrame" NavigationUIVisibility="Hidden"></Frame>
+        <Frame Name="SubdivisionFrame" NavigationUIVisibility="Hidden"></Frame>
     </Grid>
 </Window>

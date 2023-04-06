@@ -82,8 +82,26 @@
     <Compile Include="Views\Pages\SecurityPages\SecurityMainPage.xaml.cs">
       <DependentUpon>SecurityMainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Pages\SubdivisionPages\BlackListPage.xaml.cs">
+      <DependentUpon>BlackListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\SubdivisionPages\MoreInfoList.xaml.cs">
+      <DependentUpon>MoreInfoList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\SubdivisionPages\RequestList.xaml.cs">
+      <DependentUpon>RequestList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\SubdivisionPages\SubdivisionMainPage.xaml.cs">
+      <DependentUpon>SubdivisionMainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\SubdivisionPages\VisitorList.xaml.cs">
+      <DependentUpon>VisitorList.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Windows\SecurityManagment.xaml.cs">
       <DependentUpon>SecurityManagment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\SubdivisionControl.xaml.cs">
+      <DependentUpon>SubdivisionControl.xaml</DependentUpon>
     </Compile>
     <Page Include="Views\Pages\DostupPages\DostupMainPage.xaml">
       <SubType>Designer</SubType>
@@ -106,6 +124,26 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Pages\SecurityPages\SecurityMainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\SubdivisionPages\BlackListPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\SubdivisionPages\MoreInfoList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\SubdivisionPages\RequestList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\SubdivisionPages\SubdivisionMainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\SubdivisionPages\VisitorList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -178,6 +216,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Views\Windows\SecurityManagment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\SubdivisionControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
